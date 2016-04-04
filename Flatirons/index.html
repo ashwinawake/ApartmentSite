@@ -7,14 +7,43 @@
     <meta name="author" content>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-1.12.1.min.js"></script>
     
     <style>
+    h1{
+    	font-weight: 300;
+    	font-family: 'Roboto', sans-serif;
+    	color: #ef7a49;
+    }
+
+    h4{
+    	color: #ef7a49;
+    }
+
+    h5{
+    	font-family: 'Source Sans Pro', sans-serif;
+    	font-size: 20px;
+    }
+
+    .navbar{
+        background-color: #ef7a49;
+    }
+
+    .box{
+        background: #ef7a49;
+        padding-top: -20px;
+        margin-top: 40px;
+        width: 100%;
+        height: 600px;
+    }
+
     .position{
     	width:100%;
     }
+
     #myCarousel{
     	margin-top:-20px;
     	margin-left:-20px;
@@ -22,23 +51,27 @@
     	margin-right: -15px;
     	margin-right: -15px;
     }
+
     .img-responsive{
     	margin:auto;
     	width:100%;
+    	height:600px;
     }
+
     .text-center{
     	padding-top: 8%;
-    	font-family: 'Roboto', sans-serif;
+    }
+    
+    .text-effect{
     	font-weight: 300;
-    	color: #999999;
+    	color: white;
     }
     </style>
 </head>
 <body>
-   
    <div class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
+       <div class="container">
+         <div class="navbar-header">
             <img class="navbar-brand" src="https://placehold.it/150x30"/>
 
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -107,10 +140,84 @@
 </div>
     </div>
    <div class="container">
-    <div class="col-lg-12">
-     <h2 class="text-center font">COMFORT, CONVENIENCE AND AFFORDABILITY</h2>
+    <div class="col-md-12">
+     <h1 class="text-center">COMFORT, CONVENIENCE AND AFFORDABILITY</h1>
+     <br>
+       <h5 class="text-center" style="padding-top: 5%; padding-bottom: 5%">Flatiron Park Apartments is a friendly student community located less than a mile from campus.<br>
+     We offer high quality, affordable housing particularly convenient for NCSU students. <br>
+     Parkwood provides the finest in garden style apartment living with all the amenities.</h5>
     </div> 
    </div> 
+
+   <div class="container">
+     <div class="row" style="padding-top: 50px;margin-left: 0px;">
+
+         <div class="col-md-4">
+             <img src="https://unsplash.it/g/300/300" class="img-circle" alt="random image" style="padding-left: 5%;">
+             <h1 style="padding-left: 23%">Comfort</h1><br>
+             <h4 style="padding-left: 20%">Home Sweet Home</h4>
+             <h5 style="padding-left: 10%; padding-top: 10%; margin-right: 10%">Flatirons Park is the best home away from home for NCSU students and others looking for a perfect place in Broomfield.</h5>
+         </div>
+
+         <div class="col-md-4">
+             <img src="https://unsplash.it/g/300/300" class="img-circle" alt="random image" style="padding-left: 5%;">
+             <h1 style="padding-left: 15%">Convenience</h1><br>
+             <h4 style="padding-left: 23%">All the Amenities</h4>
+             <h5 style="padding-left: 10%; padding-top: 10%; margin-right: 10%">Only one mile from campus, two Wolf Lines on site. Cable and high speed internet ready. Roomy closets and wall-to-wall carpet.</h5>
+         </div>
+
+         <div class="col-md-4">
+             <img src="https://unsplash.it/g/300/300" class="img-circle" alt="random image" style="padding-left: 5%;">
+             <h1 style="padding-left: 18%">Affordability</h1><br>
+             <h4 style="padding-left: 17%">High Quality, Low Price</h4>
+             <h5 style="padding-left: 10%; padding-top: 10%; margin-right: 10%">We offer one and two bedroom apartments in Flatirons Park Apartments.</h5>
+
+         </div>
+
+     </div>
+   </div>
+
+   <div class="container box">
+       <h1 class="text-center text-effect" style="padding-top: 100px;">SERVICES</h1>
+       <h5 class="text-center text-effect" style="padding-right: 20%;padding-left: 20%">Our friendly, award-winning staff is here to help you. We offer 24 hour emergency maintenance. Your stay is worry free with our 30-day satisfaction guarantee. Stop in any time to say hi!</h5>
+
+       <div class="row text-effect">
+
+           <div class="col-md-6">
+           <h5 class="text-center">MANAGEMENT</h5>
+           </div>  
+           
+           <div class="col-md-6">
+           <h5 class="text-center">MAINTENANCE</h5>
+           </div>
+       </div>
+   </div>
+
+   <div class="container">
+       <h1 class="text-center">OUR APARTMENT OPTIONS</h1>
+       <h5 class="text-center" style="padding-right: 20%;padding-left: 20%">Location, value, spacious accomodations and ample parking make Flatirons Park the right housing choice for you. Comfort and convenience at the right price.</h5>      
+   </div>
+
+   <div class="container">
+      <h1 class="text-center">CONTACT US</h1>
+      <h5 class="text-center" style="padding-right: 20%;padding-left: 20%">Please feel free to contact us any time. We'd love to help you find your perfect home.</h5>
+
+      <div class="row">
+        <form>
+          <div class="col-md-4">
+              <input type="text" id="txtName" name="txtName" placeholder="Name"><br>
+              <input type="email" id="txtEmail" name="txtEmail" placeholder="Email"><br>
+              <input type="text" id="txtSubject"name="txtSubject" placeholder="Subject">
+          </div>
+
+          <div class="col-md-4">
+          </div>
+        </form>
+          <div class="col-md-4">
+          </div>
+      </div>
+   </div>
+
    <script src="js/bootstrap.min.js"></script>
    <script src="js/jquery-1.12.1.min.js"></script>
 </body>
