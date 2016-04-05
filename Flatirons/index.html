@@ -114,11 +114,11 @@
 
           <ul class="nav navbar-nav navbar-right">
               <li><a href=""><h6>HOME</h6></a></li>
-              <li><a href=""><h6>ABOUT</h6></a></li>
-              <li><a href=""><h6>SERVICES</h6></a></li>
+              <li><a href="#about"><h6>ABOUT</h6></a></li>
+              <li><a href="#service"><h6>SERVICES</h6></a></li>
               <li><a href=""><h6>GALLERY</h6></a></li>
-              <li><a href=""><h6>OPTIONS</h6></a></li>
-              <li><a href=""><h6>CONTACT</h6></a></li>
+              <li><a href="#option"><h6>OPTIONS</h6></a></li>
+              <li><a href="#contact"><h6>CONTACT</h6></a></li>
           </ul>
         </div>      
     </div>
@@ -166,7 +166,7 @@
     </div>
    <div class="container">
     <div class="col-md-12">
-     <h1 class="text-center">COMFORT, CONVENIENCE AND AFFORDABILITY</h1>
+     <h1 class="text-center" id="about">COMFORT, CONVENIENCE AND AFFORDABILITY</h1>
      <hr>
      <br>
        <h5 class="text-center" style="padding-top: 0px;padding-bottom: 5%;">Flatiron Park Apartments is a friendly student community located less than a mile from campus.<br>
@@ -204,7 +204,7 @@
    </div>
 
    <div class="container box">
-       <h1 class="text-center text-effect" style="padding-top: 100px;">SERVICES</h1>
+       <h1 class="text-center text-effect" style="padding-top: 100px;" id="service">SERVICES</h1>
        <hr style="border-color: white;width: 12%;">
        <h5 class="text-center text-effect" style="padding-top: 3%;padding-right: 20%;padding-left: 20%">Our friendly, award-winning staff is here to help you. We offer 24 hour emergency maintenance. Your stay is worry free with our 30-day satisfaction guarantee. Stop in any time to say hi!</h5>
 
@@ -221,13 +221,13 @@
    </div>
 
    <div class="container">
-       <h1 class="text-center">OUR APARTMENT OPTIONS</h1>
+       <h1 class="text-center" id="option">OUR APARTMENT OPTIONS</h1>
        <hr>
        <h5 class="text-center" style="padding-top: 3%;padding-right: 20%;padding-left: 20%">Location, value, spacious accomodations and ample parking make Flatirons Park the right housing choice for you. Comfort and convenience at the right price.</h5>      
    </div>
 
    <div class="container">
-      <h1 class="text-center">CONTACT US</h1>
+      <h1 class="text-center" id="contact">CONTACT US</h1>
       <hr>
       <h5 class="text-center" style="padding-top: 3%;padding-right: 20%;padding-left: 20%">Please feel free to contact us any time. We'd love to help you find your perfect home.</h5>
 
@@ -260,6 +260,22 @@
    $('li').hover(function(){
    	$(this).find('h6').toggleClass('change-color');
    });
+   
+
+   $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
    </script>
 </body>
 </html>
