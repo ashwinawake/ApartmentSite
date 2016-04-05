@@ -85,6 +85,10 @@
     .footer{
     	padding-top: 10%;
     }
+
+    .change-color{
+    	color: #ef7a49;
+    }
     </style>
 </head>
 <body>
@@ -107,12 +111,12 @@
         <div class="collapse navbar-collapse">
 
           <ul class="nav navbar-nav navbar-right">
-              <li><a href="">HOME</a></li>
-              <li><a href="">ABOUT</a></li>
-              <li><a href="">SERVICES</a></li>
-              <li><a href="">GALLERY</a></li>
-              <li><a href="">OPTIONS</a></li>
-              <li><a href="">CONTACT</a></li>
+              <li><a href=""><h6>HOME</h6></a></li>
+              <li><a href=""><h6>ABOUT</h6></a></li>
+              <li><a href=""><h6>SERVICES</h6></a></li>
+              <li><a href=""><h6>GALLERY</h6></a></li>
+              <li><a href=""><h6>OPTIONS</h6></a></li>
+              <li><a href=""><h6>CONTACT</h6></a></li>
           </ul>
         </div>      
     </div>
@@ -250,5 +254,10 @@
 
    <script src="js/bootstrap.min.js"></script>
    <script src="js/jquery-1.12.1.min.js"></script>
+   <script>
+   $('li').hover(function(){
+   	$('h6').toggleClass('change-color');
+   });
+   </script>
 </body>
 </html>
