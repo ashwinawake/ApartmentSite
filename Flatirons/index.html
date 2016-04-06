@@ -61,12 +61,6 @@
     	margin-right: -15px;
     }
 
-    .img-responsive{
-    	margin:auto;
-    	width:100%;
-    	height:600px;
-    }
-
     .text-center{
     	padding-top: 8%;
     }
@@ -102,114 +96,77 @@
     </style>
 </head>
 <body>
-   <div class="navbar navbar-default navbar-fixed-top">
-       <div class="container">
-         <div class="navbar-header">
-            <img class="navbar-brand" src="https://placehold.it/150x30"/>
+     <div class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+              <div class="navbar-header">
+                  <img class="navbar-brand" src="https://placehold.it/150x30"/>
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle Navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+              </div>
 
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle Navigation</span>
-
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-
-            </button>
-
+              <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li><a href="#home"><h6>HOME</h6></a></li>
+                      <li><a href="#about"><h6>ABOUT</h6></a></li>
+                      <li><a href="#service"><h6>SERVICES</h6></a></li>
+                      <li><a href="#gallery"><h6>GALLERY</h6></a></li>
+                      <li><a href="#option"><h6>OPTIONS</h6></a></li>
+                      <li><a href="#contact"><h6>CONTACT</h6></a></li>
+                  </ul>
+             </div>      
         </div>
-
-        <div class="collapse navbar-collapse">
-
-          <ul class="nav navbar-nav navbar-right">
-              <li><a href="#home"><h6>HOME</h6></a></li>
-              <li><a href="#about"><h6>ABOUT</h6></a></li>
-              <li><a href="#service"><h6>SERVICES</h6></a></li>
-              <li><a href="#gallery"><h6>GALLERY</h6></a></li>
-              <li><a href="#option"><h6>OPTIONS</h6></a></li>
-              <li><a href="#contact"><h6>CONTACT</h6></a></li>
-          </ul>
-        </div>      
     </div>
-   </div>
-    
-    <div class="container position" id="home">
-       <div id="myCarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#myCarousel" data-slide-to="1"></li>
-    <li data-target="#myCarousel" data-slide-to="2"></li>
-    <li data-target="#myCarousel" data-slide-to="3"></li>
-  </ol>
+   
+    <div class="container" style="width: 100%; padding: 0;">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="images/mountain.jpg" alt="mountain pic" class="img-responsive" style="width: 100%; height: 600px;">
+            </div>
+        </div>
+    </div>  
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img class="img-responsive" src="https://placeimg.com/650/200/arch">
-    </div>
-
-    <div class="item">
-      <img class="img-responsive" src="https://placeimg.com/650/200/nature">
-    </div>
-
-    <div class="item">
-      <img class="img-responsive" src="https://placeimg.com/650/200/tech">
-    </div>
-
-    <div class="item">
-      <img class="img-responsive" src="https://placeimg.com/650/200/animals">
-    </div>
-  </div>
-
-  <!-- Left and right controls -->
-  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-    </div>
    <div class="container">
-    <div class="col-md-12">
-     <h1 class="text-center" id="about">COMFORT, CONVENIENCE AND AFFORDABILITY</h1>
-     <hr>
-     <br>
-       <h5 class="text-center" style="padding-top: 0px;padding-bottom: 5%;">Flatiron Park Apartments is a friendly student community located less than a mile from campus.<br>
-     We offer high quality, affordable housing particularly convenient for NCSU students. <br>
-     Parkwood provides the finest in garden style apartment living with all the amenities.</h5>
-    </div> 
+       <div class="col-md-12">
+           <h1 class="text-center" id="about">COMFORT, CONVENIENCE AND AFFORDABILITY</h1>
+           <hr>
+           <br>
+           <h5 class="text-center" style="padding-top: 0px;padding-bottom: 5%;">Flatiron Park Apartments is a friendly student community located less than a mile from campus.<br>
+           We offer high quality, affordable housing particularly convenient for NCSU students. <br>
+           Parkwood provides the finest in garden style apartment living with all the amenities.</h5>
+      </div> 
    </div> 
 
-   <div class="container">
-     <div class="row" style="padding-top: 1%;margin-left: 0px;">
+  <div class="container">
+       <div class="row" style="padding-top: 1%;margin-left: 0px;">
+           <div class="col-md-4">
+               <img src="https://unsplash.it/g/300/300" class="img-circle" alt="random image" style="padding-left: 5%;">
+               <h1 style="padding-left: 23%">Comfort</h1><br>
+               <h4 style="padding-left: 20%">Home Sweet Home</h4>
+               <h5 style="padding-left: 10%; padding-top: 10%; margin-right: 10%">Flatirons Park is the best home away from home for NCSU students and others looking for a perfect place in Broomfield.</h5>
+          </div>
 
-         <div class="col-md-4">
-             <img src="https://unsplash.it/g/300/300" class="img-circle" alt="random image" style="padding-left: 5%;">
-             <h1 style="padding-left: 23%">Comfort</h1><br>
-             <h4 style="padding-left: 20%">Home Sweet Home</h4>
-             <h5 style="padding-left: 10%; padding-top: 10%; margin-right: 10%">Flatirons Park is the best home away from home for NCSU students and others looking for a perfect place in Broomfield.</h5>
-         </div>
+          <div class="col-md-4">
+              <img src="https://unsplash.it/g/300/300" class="img-circle" alt="random image" style="padding-left: 5%;">
+              <h1 style="padding-left: 15%">Convenience</h1><br>
+              <h4 style="padding-left: 23%">All the Amenities</h4>
+              <h5 style="padding-left: 10%; padding-top: 10%; margin-right: 10%">Only one mile from campus, two Wolf Lines on site. Cable and high speed internet ready. Roomy closets and wall-to-wall carpet.</h5>
+          </div>
 
-         <div class="col-md-4">
-             <img src="https://unsplash.it/g/300/300" class="img-circle" alt="random image" style="padding-left: 5%;">
-             <h1 style="padding-left: 15%">Convenience</h1><br>
-             <h4 style="padding-left: 23%">All the Amenities</h4>
-             <h5 style="padding-left: 10%; padding-top: 10%; margin-right: 10%">Only one mile from campus, two Wolf Lines on site. Cable and high speed internet ready. Roomy closets and wall-to-wall carpet.</h5>
-         </div>
+          <div class="col-md-4">
+              <img src="https://unsplash.it/g/300/300" class="img-circle" alt="random image" style="padding-left: 5%;">
+              <h1 style="padding-left: 18%">Affordability</h1><br>
+              <h4 style="padding-left: 17%">High Quality, Low Price</h4>
+              <h5 style="padding-left: 10%; padding-top: 10%; margin-right: 10%">We offer one and two bedroom apartments in Flatirons Park Apartments.</h5>
 
-         <div class="col-md-4">
-             <img src="https://unsplash.it/g/300/300" class="img-circle" alt="random image" style="padding-left: 5%;">
-             <h1 style="padding-left: 18%">Affordability</h1><br>
-             <h4 style="padding-left: 17%">High Quality, Low Price</h4>
-             <h5 style="padding-left: 10%; padding-top: 10%; margin-right: 10%">We offer one and two bedroom apartments in Flatirons Park Apartments.</h5>
+          </div>
 
-         </div>
-
-     </div>
+      </div>
    </div>
+
 
    <div class="container box">
        <h1 class="text-center text-effect" id="service" style="padding-top: 100px;">SERVICES</h1>
@@ -228,6 +185,25 @@
         </div>                     
 
        </div>
+   </div>
+
+   <div class="container" id="gallery">
+       <h1 class="text-center" id="option">GALLERY</h1>
+       <hr>
+        <div class="row">
+            <div class="col-md-3">
+             <img src="https://placeimg.com/640/480/animals" alt="animal image" class="img-responsive">
+            </div>
+            <div class="col-md-3">
+             <img src="https://placeimg.com/640/480/animals" alt="animal image" class="img-responsive">
+            </div>
+            <div class="col-md-3">
+             <img src="https://placeimg.com/640/480/animals" alt="animal image" class="img-responsive">
+            </div>
+            <div class="col-md-3">
+             <img src="https://placeimg.com/640/480/animals" alt="animal image" class="img-responsive">
+            </div>
+        </div>
    </div>
 
    <div class="container">
